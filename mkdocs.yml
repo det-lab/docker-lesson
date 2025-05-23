@@ -1,1 +1,19 @@
 site_name: My Docs
+nav:
+  - Home: index.md
+  - Introduction: 01_introduction.md
+  - Containers: 02_containers.md
+  - Installation: 03_installation.md
+  - Docker SSH: 04_docker-ssh.md
+  - Basic Commands: 05_basic-commands.md
+
+theme: 
+  name: material
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
