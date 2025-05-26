@@ -19,3 +19,4 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
         03_installation.md   # Installing Docker and running a container
         04_docker-ssh.md     # Installing SSH inside a container
         05_basic-commands.md # Learning basic Docker commands
+        06_examples.md       # Giving examples of Docker usage

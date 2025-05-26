@@ -9,6 +9,7 @@ However, there are situations in which installing SSH makes sense:
 ## Step-by-step: Installing SSH in a Container
 While using an Ubuntu terminal, we'll create an Ubuntu-based container, install OpenSSH Server, and configure it to accept connections. 
 > **Note:** Angled brackets in this lesson denote user-specific content - be sure to delete them and replace them to your preference.
+> For more information on using SSH, visit our HSF training page, [here](https://hsf-training.github.io/hsf-training-ssh-webpage/).
 ### 1. Create a project folder (optional but recommended)
 ```bash
 mkdir <your-ssh-container>
