@@ -288,27 +288,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#21-container-images" class="md-nav__link">
+  <a href="#container-images" class="md-nav__link">
     <span class="md-ellipsis">
-      2.1: Container Images
+      Container Images
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#22-containers" class="md-nav__link">
+  <a href="#containers" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2: Containers
+      Containers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#23-containers-vs-virtual-machines" class="md-nav__link">
+  <a href="#containers-vs-virtual-machines" class="md-nav__link">
     <span class="md-ellipsis">
-      2.3: Containers vs. Virtual Machines
+      Containers vs. Virtual Machines
     </span>
   </a>
   
@@ -415,27 +415,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#21-container-images" class="md-nav__link">
+  <a href="#container-images" class="md-nav__link">
     <span class="md-ellipsis">
-      2.1: Container Images
+      Container Images
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#22-containers" class="md-nav__link">
+  <a href="#containers" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2: Containers
+      Containers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#23-containers-vs-virtual-machines" class="md-nav__link">
+  <a href="#containers-vs-virtual-machines" class="md-nav__link">
     <span class="md-ellipsis">
-      2.3: Containers vs. Virtual Machines
+      Containers vs. Virtual Machines
     </span>
   </a>
   
@@ -459,15 +459,15 @@
 
 <h1 id="2-containers-and-images">2: Containers and Images</h1>
 <p>When working with Docker, two core concepts that you'll encounter are <strong>container images</strong> and <strong>containers</strong>. Understanding them both and the distinctions between them is key to the effective use of Docker.</p>
-<h2 id="21-container-images">2.1: Container Images</h2>
+<h2 id="container-images">Container Images</h2>
 <p>A <strong>container image</strong> can be likened to a packaged blueprint of a container, including everything that a program requires to run such as the code of the application itself, the required system libraries and dependencies, the configuration files and environment settings, etc.</p>
 <p>Container images are <strong>static</strong> and <strong>read-only</strong> - you can think of them as snapshots or templates. Once built, they can be stored, shared, and reused on any system that supports Docker. </p>
 <p>Docker images are versioned and portable, allowing you to move seamlessly between development, testing, and production environments. </p>
-<h2 id="22-containers">2.2: Containers</h2>
+<h2 id="containers">Containers</h2>
 <p>Docker describes containers as "a standard unit of software" which packages all code and its dependencies. It can also be thought of as a <strong>running instance</strong> of a container image. When Docker starts a container, it creates a writable layer "on top" of the read-only image, before allowing the application to run in an isolated environment with its own file system, network interfaces, and process space. You can run multiple containers from the same image at the same time while allowing each container to act as an independent unit. </p>
 <p>For example, it might be useful to use the same database image to run one container for development, another for automated tests, and a third in production. Despite all coming from the same image, each container is able to store its own data and settings.</p>
 <p>This separation between images (the blueprints) and containers (the running instances) allows Docker to quickly set up new environments, efficiently reuse resources, and ensure consistency across machines and stages of development.</p>
-<h2 id="23-containers-vs-virtual-machines">2.3: Containers vs. Virtual Machines</h2>
+<h2 id="containers-vs-virtual-machines">Containers vs. Virtual Machines</h2>
 <p>While containers and virtual machines (VMs) might seem similar at a glance (both allow you to run isolated environments), the way that they achieve their isolation and their performance characteristics are significantly different. </p>
 <p>A virtual machine emulates an <strong>entire computer</strong>, including:
 * Its own guest operating system.
