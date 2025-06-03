@@ -6,6 +6,8 @@ To create a container, you first need an image. If you have a `Dockerfile`, you 
 docker build -t <your-image-name> .
 ```
 As mentioned in the previous section, the command `-t` tags your image with a human-readable name, while `.` specifies the current directory as the build context.
+
+Also - for help writing your Dockerfile, reference the official documentation for commands [here](https://docs.docker.com/reference/dockerfile/).
 ## Running a container
 To create and start a container from an image, run:
 ```bash
