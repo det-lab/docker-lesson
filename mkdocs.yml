@@ -5,7 +5,6 @@ nav:
   - Installation: 02_installation.md
   - Docker SSH: 03_docker-ssh.md
   - Basic Commands: 04_basic-commands.md
-  - Example Usage: 05_examples.md
 
 theme: 
   name: material
