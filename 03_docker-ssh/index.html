@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../03_installation/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../05_basic-commands/">
+        <link rel="next" href="../04_basic-commands/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#4-installing-ssh-inside-a-container" class="md-skip">
+        <a href="#installing-ssh-inside-a-container" class="md-skip">
           Skip to content
         </a>
       
@@ -194,29 +194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../01_introduction/" class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -238,7 +216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02_containers/" class="md-nav__link">
+      <a href="../01_containers.md" class="md-nav__link">
         
   
   
@@ -260,7 +238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_installation/" class="md-nav__link">
+      <a href="../02_installation.md" class="md-nav__link">
         
   
   
@@ -351,6 +329,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#0-open-your-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      0. Open your terminal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#1-create-a-project-folder-optional-but-recommended" class="md-nav__link">
     <span class="md-ellipsis">
       1. Create a project folder (optional but recommended)
@@ -360,9 +347,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-create-a-file-named-dockerfile-no-file-extension-using-the-ubuntu-terminal-wsl" class="md-nav__link">
+  <a href="#2-create-a-file-named-dockerfile-no-file-extension" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Create a file named Dockerfile (no file extension) using the Ubuntu terminal (WSL)
+      2. Create a file named Dockerfile (no file extension)
     </span>
   </a>
   
@@ -371,7 +358,7 @@
           <li class="md-nav__item">
   <a href="#3-open-the-dockerfile-in-a-text-editor" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Open the Dockerfile in a text editor:
+      3. Open the Dockerfile in a text editor
     </span>
   </a>
   
@@ -433,7 +420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05_basic-commands/" class="md-nav__link">
+      <a href="../04_basic-commands/" class="md-nav__link">
         
   
   
@@ -455,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06_examples/" class="md-nav__link">
+      <a href="../05_examples.md" class="md-nav__link">
         
   
   
@@ -516,6 +503,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#0-open-your-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      0. Open your terminal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#1-create-a-project-folder-optional-but-recommended" class="md-nav__link">
     <span class="md-ellipsis">
       1. Create a project folder (optional but recommended)
@@ -525,9 +521,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-create-a-file-named-dockerfile-no-file-extension-using-the-ubuntu-terminal-wsl" class="md-nav__link">
+  <a href="#2-create-a-file-named-dockerfile-no-file-extension" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Create a file named Dockerfile (no file extension) using the Ubuntu terminal (WSL)
+      2. Create a file named Dockerfile (no file extension)
     </span>
   </a>
   
@@ -536,7 +532,7 @@
           <li class="md-nav__item">
   <a href="#3-open-the-dockerfile-in-a-text-editor" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Open the Dockerfile in a text editor:
+      3. Open the Dockerfile in a text editor
     </span>
   </a>
   
@@ -599,52 +595,39 @@
 
 
 
-<h1 id="4-installing-ssh-inside-a-container">4: Installing SSH Inside a Container</h1>
+<h1 id="installing-ssh-inside-a-container">Installing SSH Inside a Container</h1>
 <h2 id="why-install-ssh-in-a-container">Why Install SSH in a Container?</h2>
-<p>In most cases, SSH is not necessary in containers. Docker is designed to run a single applciation per container, and you typically interact with it using <code>docker exec</code>, <code>docker attach</code> or Docker Compose. Adding SSH can increase the image size, introduce complexity, and create potential security concerns.</p>
-<p>However, there are situations in which installing SSH makes sense:</p>
-<ul>
-<li>
-<p><strong>Legacy Systems:</strong> You're containerizing an existing system that expects SSH access.</p>
-</li>
-<li>
-<p><strong>Remote Debugging:</strong> You want to attach to containers from another machine using familiar SSH tools.</p>
-</li>
-<li>
-<p><strong>Custom VM-like Containers:</strong> You're using containers in place of VMs and want them to behave similarly.</p>
-</li>
-</ul>
+<p>The main goal of installing SSH in a container here is for you to explore using SSH in conjunction with <a href="https://hsf-training.github.io/hsf-training-ssh-webpage/">this SSH tutorial at HSF.</a></p>
+<p>In most cases, SSH is not necessary in containers. Docker is designed to run a single application per container, and you typically interact with it using <code>docker exec</code>, <code>docker attach</code> or Docker Compose. Adding SSH when you do not need it will increase the image size and can create potential security concerns depending on your use of the container. The Docker container in this exercise is custom made for this exercise which is why it has SSH in it - don't use it for the template in your Docker containers or you will unnecessarily include SSH.</p>
 <h2 id="step-by-step-installing-ssh-in-a-container">Step-by-step: Installing SSH in a Container</h2>
 <p>While using an Ubuntu terminal, we'll create an Ubuntu-based container, install OpenSSH Server, and configure it to accept connections. </p>
 <blockquote>
-<p><strong>Note:</strong> Angled brackets in this lesson denote user-specific content - be sure to delete them and replace them to your preference.
+<p><strong>Note:</strong> Angled brackets in this lesson denote user-specific content - be sure to delete them and replace them to your preference. If you have not done this before, please <a href="TODO">read this before continuing</a>
 For more information on using SSH, visit our HSF training page, <a href="https://hsf-training.github.io/hsf-training-ssh-webpage/">here</a>.</p>
 </blockquote>
+<h3 id="0-open-your-terminal">0. Open your terminal</h3>
+<p>If you're unsure how to open your terminal, refer to <a href="https://swcarpentry.github.io/shell-novice/">the shell lesson on Software Carpentry.</a> On Windows, the appropriate application is often called Ubuntu. You can install a Terminal application from the Microsoft App Store for free. On a Mac, the appropriate application is called Terminal. On Linux, there are several different Terminal applications, and you may need to search 'terminal application + <your specific distribution>' to find the name.</p>
 <h3 id="1-create-a-project-folder-optional-but-recommended">1. Create a project folder (optional but recommended)</h3>
+<p>In the terminal, navigate to an appropriate directory that can house your project folder. For Mac and Linux users, the terminal starts in your home directory which is a reasonable place to work from. In Windows we recommend you to work in your Documents directory. This command will look like:</p>
+<pre><code class="language-bash">cd /mnt/c/Users/&lt;your username&gt;/Documents/
+</code></pre>
+<p>Then you can make a new folder and move into it using:</p>
 <pre><code class="language-bash">mkdir &lt;your-ssh-container&gt;
 cd &lt;your-ssh-container&gt;
 </code></pre>
-<h3 id="2-create-a-file-named-dockerfile-no-file-extension-using-the-ubuntu-terminal-wsl">2. Create a file named <code>Dockerfile</code> (no file extension) using the Ubuntu terminal (WSL)</h3>
+<h3 id="2-create-a-file-named-dockerfile-no-file-extension">2. Create a file named <code>Dockerfile</code> (no file extension)</h3>
 <pre><code class="language-bash">touch Dockerfile
 </code></pre>
-<h3 id="3-open-the-dockerfile-in-a-text-editor">3. Open the Dockerfile in a text editor:</h3>
-<ul>
-<li>If you're using VS Code:</li>
-</ul>
-<pre><code class="language-Dockerfile">code Dockerfile
-</code></pre>
-<ul>
-<li>Or use nano/vim:</li>
-</ul>
-<pre><code class="language-bash">nano Dockerfile
-</code></pre>
+<h3 id="3-open-the-dockerfile-in-a-text-editor">3. Open the Dockerfile in a text editor</h3>
+<p>You can open the Dockerfile outside of WSL by navigating to it using finder (Mac) or the file explorer (Windows). Then you can right (or command) click on the file to open it with a text editor such as TextEdit (Mac) or Notepad (Windows).</p>
 <h3 id="4-paste-the-dockerfile-content">4. Paste the Dockerfile content:</h3>
+<p>Please remember to read through this after pasting it and change your password.</p>
 <pre><code class="language-python">FROM ubuntu:22.04
 
 # Install SSH Server
 RUN apt-get update &amp;&amp; apt-get install -y openssh-server
 
-# Create SSH directory and set password for root - replace part in angle brackets
+# Create SSH directory and set password for root - REPLACE PART IN ANGLE BRACKETS
 RUN mkdir /var/run/sshd &amp;&amp; echo 'root:&lt;your-new-password&gt;' | chpasswd
 
 # Allow root login (not recommended for production)
@@ -672,14 +655,15 @@ CMD [&quot;/usr/sbin/sshd&quot;, &quot;-D&quot;]
 <pre><code class="language-bash">docker run -d -p 2222:22 --name ssh-container &lt;your-ssh-container&gt;
 </code></pre>
 <ul>
-<li>This maps port <code>22</code> inside the container to port <code>2222</code> on your machine.
-You should now be able to SSH in using:</li>
+<li>This maps port <code>22</code> inside the container to port <code>2222</code> on your machine.</li>
 </ul>
+<p>You'll need to open a new terminal, on which you can now SSH in using:</p>
 <pre><code class="language-bash">ssh root@localhost -p 2222
 </code></pre>
 <p>This will prompt you to enter the password which was set in step 4 (<code>RUN mkdir /var/run/sshd &amp;&amp; echo 'root:&lt;your-new-password&gt;' | chpasswd</code>). </p>
+<p>Now, you can refer to the <a href="https://hsf-training.github.io/hsf-training-ssh-webpage/">SSH tutorial</a> and explore, even if you don't have an account on a cluster.</p>
 <hr />
-<p>Let's continue now to <a href="../05_basic-commands/">section 5</a> to learn some basic commands in Docker.</p>
+<p>If you want to learn more about basic Docker commands, see <a href="../04_basic-commands/">the next section</a>. </p>
 
 
 

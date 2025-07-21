@@ -9,8 +9,8 @@
       
       
       
+        <link rel="prev" href="../03_docker-ssh/">
       
-        <link rel="next" href="../02_containers/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +18,7 @@
     
     
       
-        <title>Introduction - An Introduction to Docker</title>
+        <title>Basic Commands - An Introduction to Docker</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-introduction" class="md-skip">
+        <a href="#5-basic-docker-commands" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Basic Commands
             
           </span>
         </div>
@@ -192,12 +192,78 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.md" class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Home
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_containers.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Containers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_installation.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_docker-ssh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker SSH
     
   </span>
   
@@ -223,96 +289,20 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Basic Commands
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../02_containers/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Containers
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../03_installation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Installation
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../04_docker-ssh/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Docker SSH
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../05_basic-commands/" class="md-nav__link">
         
   
   
@@ -323,6 +313,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#building-a-docker-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building a Docker Image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-a-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running a container
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspecting-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspecting Containers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cleanup-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cleanup Tips
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -334,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06_examples/" class="md-nav__link">
+      <a href="../05_examples.md" class="md-nav__link">
         
   
   
@@ -369,6 +415,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#building-a-docker-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building a Docker Image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-a-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running a container
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspecting-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspecting Containers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cleanup-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cleanup Tips
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -383,31 +473,90 @@
 
 
 
-<h1 id="1-introduction">1: Introduction</h1>
-<p>Docker is a tool which allows users to build, share, package, verify, and run applications in isolated environments called <strong>containers</strong> while avoiding the tedium of environment confirguration and management.</p>
-<p>It's not uncommon when programming collaboratively that something that might work well on one user's environment will run into issues when another user tries to run the same steps. Docker ensures that applications and their dependencies are bundled together in a portable format, side-stepping the classic "well, it works on my machine" issue which can be otherwise difficult to solve. Whether developing from your personal laptop or deploying to production servers, Docker helps to ensure that the environment stays consistent.</p>
-<p><strong>Containers</strong> are lightweight and fast, built to share the host's operating system's kernal rather than running full virtual machines. This makes them efficiently capable of isolating processses, testing software in clean environments, or managing complex multi-service applications without polluting your local system.</p>
-<p>In this lesson, we'll explore:</p>
+<h1 id="5-basic-docker-commands">5: Basic Docker Commands</h1>
+<p>Once Docker is installed, you'll primarily use the <code>docker</code> CLI (Command-Line Interface) to interact with images and containers. Here's some of the essential commands that cover the full lifecycle: build, run, inspect, and manage. You will need to run these commands in a shell.</p>
+<h2 id="building-a-docker-image">Building a Docker Image</h2>
+<p>To create a container, you first need an image. If you have a <code>Dockerfile</code>, you can build an image from it:</p>
+<pre><code class="language-bash">docker build -t &lt;your-image-name&gt; .
+</code></pre>
+<p>As mentioned in the previous section, the command <code>-t</code> tags your image with a human-readable name, while <code>.</code> specifies the current directory as the build context.</p>
+<p>Also - for help writing your Dockerfile, reference the official documentation for commands <a href="https://docs.docker.com/reference/dockerfile/">here</a>.</p>
+<h2 id="running-a-container">Running a container</h2>
+<p>To create and start a container from an image, run:</p>
+<pre><code class="language-bash">docker run -it --name &lt;your-container&gt; &lt;your-image-name&gt;
+</code></pre>
 <ul>
 <li>
-<p>What containers are and how they differ from virtual machines.</p>
+<p><code>-it</code>: Attaches an interactive terminal.</p>
 </li>
 <li>
-<p>How to install Docker and run your first container.</p>
+<p><code>--name &lt;your-container&gt;</code>: Assigns a name to the container.</p>
 </li>
 <li>
-<p>How to install SSH inside a container, and why you might choose to do so.</p>
-</li>
-<li>
-<p>How to use basic Docker commands to build, inspect, and manage your containers.</p>
-</li>
-<li>
-<p>Practical examples to illustrate how Docker can simplify both development and deployment workflows.</p>
+<p><code>&lt;your-image-name&gt;</code>: Refers to the image built earlier.</p>
 </li>
 </ul>
-<p>By the end of this lesson, you should have a working understanding of how to use Docker to create reliable and reproducible environments for your projects. </p>
+<p>To run container in the background:</p>
+<pre><code class="language-bash">docker run -d --name &lt;your-container&gt; &lt;my-image-name&gt;
+</code></pre>
+<p>To map a port from your host machine to the container, such as host port 8080 to container port 80:</p>
+<pre><code class="language-bash">docker run -d -p 8080:80 &lt;your-image-name&gt;
+</code></pre>
+<h2 id="inspecting-containers">Inspecting Containers</h2>
+<ul>
+<li>List running containers:</li>
+</ul>
+<pre><code class="language-bash">docker ps
+</code></pre>
+<ul>
+<li>List all containers, including stopped ones:</li>
+</ul>
+<pre><code class="language-bash">docker ps -a
+</code></pre>
+<ul>
+<li>View container logs:</li>
+</ul>
+<pre><code class="language-bash">docker logs &lt;your-container&gt;
+</code></pre>
+<ul>
+<li>Inspect low-level configuration and state:</li>
+</ul>
+<pre><code class="language-bash">docker inspect &lt;your-container&gt;
+</code></pre>
+<ul>
+<li>Check real-time resource usage, such as CPU and memory:</li>
+</ul>
+<pre><code class="language-bash">docker stats
+</code></pre>
+<h2 id="cleanup-tips">Cleanup Tips</h2>
+<ul>
+<li>Remove all stopped containers:</li>
+</ul>
+<pre><code class="language-bash">docker container prune
+</code></pre>
+<ul>
+<li>Remove unused images:</li>
+</ul>
+<pre><code class="language-bash">docker image prune
+</code></pre>
+<ul>
+<li>Remove all unused containers, networks, and images:</li>
+</ul>
+<pre><code class="language-bash">docker system prune
+</code></pre>
 <hr />
-<p>Let's continue to <a href="../02_containers/">section 2</a> to begin learning about container images and containers.</p>
+<p>If you want to continue to learn more about Docker after this lesson here are some additional resources:</p>
+<ul>
+<li>
+<p><a href="https://carpentries.org/lesson-development/community-lessons/">The Carpentries Community Lessons.</a> Use the search box at the bottom to search "containers" to find more relevant lessons.</p>
+</li>
+<li>
+<p><a href="https://hsf-training.org/training-center/">The HSF Training Center.</a> Articles of interest to you may be the ones for Docker, Singularity, and Reproducible Analysis with REANA.</p>
+</li>
+<li>
+<p><a href="https://store.wizardzines.com/products/how-containers-work">How Containers Work!</a> by Julia Evans. If you really want to understand how containers work, this is the best resource available.</p>
+</li>
+</ul>
 
 
 

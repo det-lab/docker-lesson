@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../01_introduction/">
-      
-      
-        <link rel="next" href="../03_installation/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Containers - An Introduction to Docker</title>
+        <title>Containers and Images - An Introduction to Docker</title>
       
     
     
@@ -62,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2-containers-and-images" class="md-skip">
+        <a href="#containers-and-images" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Containers
+              Containers and Images
             
           </span>
         </div>
@@ -194,29 +190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../01_introduction/" class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -235,32 +209,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Containers
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../01_containers.md" class="md-nav__link">
         
   
   
@@ -271,53 +223,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#container-images" class="md-nav__link">
-    <span class="md-ellipsis">
-      Container Images
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#containers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Containers
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#containers-vs-virtual-machines" class="md-nav__link">
-    <span class="md-ellipsis">
-      Containers vs. Virtual Machines
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -329,7 +234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_installation/" class="md-nav__link">
+      <a href="../02_installation.md" class="md-nav__link">
         
   
   
@@ -351,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04_docker-ssh/" class="md-nav__link">
+      <a href="../03_docker-ssh/" class="md-nav__link">
         
   
   
@@ -373,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05_basic-commands/" class="md-nav__link">
+      <a href="../04_basic-commands/" class="md-nav__link">
         
   
   
@@ -395,7 +300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06_examples/" class="md-nav__link">
+      <a href="../05_examples.md" class="md-nav__link">
         
   
   
@@ -479,16 +384,14 @@
 
 
 
-<h1 id="2-containers-and-images">2: Containers and Images</h1>
+<h1 id="containers-and-images">Containers and Images</h1>
 <p>When working with Docker, two core concepts that you'll encounter are <strong>container images</strong> and <strong>containers</strong>. Understanding them both and the distinctions between them is key to the effective use of Docker.</p>
 <h2 id="container-images">Container Images</h2>
 <p>A <strong>container image</strong> can be likened to a packaged blueprint of a container, including everything that a program requires to run such as the code of the application itself, the required system libraries and dependencies, the configuration files and environment settings, etc.</p>
 <p>Container images are <strong>static</strong> and <strong>read-only</strong> - you can think of them as snapshots or templates. Once built, they can be stored, shared, and reused on any system that supports Docker. </p>
 <p>Docker images are versioned and portable, allowing you to move seamlessly between development, testing, and production environments. </p>
 <h2 id="containers">Containers</h2>
-<p>Docker describes containers as "a standard unit of software" which packages all code and its dependencies. It can also be thought of as a <strong>running instance</strong> of a container image. When Docker starts a container, it creates a writable layer "on top" of the read-only image, before allowing the application to run in an isolated environment with its own file system, network interfaces, and process space. You can run multiple containers from the same image at the same time while allowing each container to act as an independent unit. </p>
-<p>For example, it might be useful to use the same database image to run one container for development, another for automated tests, and a third in production. Despite all coming from the same image, each container is able to store its own data and settings.</p>
-<p>This separation between images (the blueprints) and containers (the running instances) allows Docker to quickly set up new environments, efficiently reuse resources, and ensure consistency across machines and stages of development.</p>
+<p>Docker describes containers as "a standard unit of software" which packages all code and its dependencies. It can also be thought of as a <strong>running instance</strong> of a container image. When Docker starts a container, it creates a writable layer "on top" of the read-only image, before allowing the application to run in an isolated environment with its own file system, network interfaces, and process space. Pay attention to language - the images are the blueprints and the containers are more like the running instances.</p>
 <h2 id="containers-vs-virtual-machines">Containers vs. Virtual Machines</h2>
 <p>While containers and virtual machines (VMs) might seem similar at a glance (both allow you to run isolated environments), the way that they achieve their isolation and their performance characteristics are significantly different. </p>
 <p>A virtual machine emulates an <strong>entire computer</strong>, including:</p>
@@ -534,7 +437,7 @@
 </tbody>
 </table>
 <hr />
-<p>Let's continue on to <a href="../03_installation/">section 3</a> to install Docker and start working with containers.</p>
+<p>Let's continue on to <a href="../03_docker-ssh/">the next section</a> where we will start a container that runs an SSH service so that you can practice using SSH.</p>
 
 
 
