@@ -491,10 +491,16 @@
 <p>This separation between images (the blueprints) and containers (the running instances) allows Docker to quickly set up new environments, efficiently reuse resources, and ensure consistency across machines and stages of development.</p>
 <h2 id="containers-vs-virtual-machines">Containers vs. Virtual Machines</h2>
 <p>While containers and virtual machines (VMs) might seem similar at a glance (both allow you to run isolated environments), the way that they achieve their isolation and their performance characteristics are significantly different. </p>
-<p>A virtual machine emulates an <strong>entire computer</strong>, including:
-* Its own guest operating system.
-* Virtual hardware, such as CPU, memory, disk, and network interfaces.
-Each VM runs on top of a hypervisor, such as VirtualBox or VMware, which sits between the physical hardware and the virtual machine.</p>
+<p>A virtual machine emulates an <strong>entire computer</strong>, including:</p>
+<ul>
+<li>
+<p>Its own guest operating system.</p>
+</li>
+<li>
+<p>Virtual hardware, such as CPU, memory, disk, and network interfaces.</p>
+</li>
+</ul>
+<p>Each VM runs on top of a hypervisor, such as VirtualBox or VMware, which sits between the physical hardware and the virtual machine.</p>
 <p>As mentioned before, a container <strong>shares</strong> the host's operating system kernal, simply isolating the file system, processes, and network. To summarize:</p>
 <table>
 <thead>

@@ -528,11 +528,17 @@
 <pre><code class="language-bash">docker run -it --name &lt;your-container&gt; &lt;your-image-name&gt;
 </code></pre>
 <ul>
-<li><code>-it</code>: Attaches an interactive terminal.</li>
-<li><code>--name &lt;your-container&gt;</code>: Assigns a name to the container.</li>
-<li><code>&lt;your-image-name&gt;</code>: Refers to the image built earlier.
-To run container in the background:</li>
+<li>
+<p><code>-it</code>: Attaches an interactive terminal.</p>
+</li>
+<li>
+<p><code>--name &lt;your-container&gt;</code>: Assigns a name to the container.</p>
+</li>
+<li>
+<p><code>&lt;your-image-name&gt;</code>: Refers to the image built earlier.</p>
+</li>
 </ul>
+<p>To run container in the background:</p>
 <pre><code class="language-bash">docker run -d --name &lt;your-container&gt; &lt;my-image-name&gt;
 </code></pre>
 <p>To map a port from your host machine to the container, such as host port 8080 to container port 80:</p>

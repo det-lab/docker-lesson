@@ -602,10 +602,18 @@
 <h1 id="4-installing-ssh-inside-a-container">4: Installing SSH Inside a Container</h1>
 <h2 id="why-install-ssh-in-a-container">Why Install SSH in a Container?</h2>
 <p>In most cases, SSH is not necessary in containers. Docker is designed to run a single applciation per container, and you typically interact with it using <code>docker exec</code>, <code>docker attach</code> or Docker Compose. Adding SSH can increase the image size, introduce complexity, and create potential security concerns.</p>
-<p>However, there are situations in which installing SSH makes sense:
-* <strong>Legacy Systems:</strong> You're containerizing an existing system that expects SSH access.
-* <strong>Remote Debugging:</strong> You want to attach to containers from another machine using familiar SSH tools.
-* <strong>Custom VM-like Containers:</strong> You're using containers in place of VMs and want them to behave similarly.</p>
+<p>However, there are situations in which installing SSH makes sense:</p>
+<ul>
+<li>
+<p><strong>Legacy Systems:</strong> You're containerizing an existing system that expects SSH access.</p>
+</li>
+<li>
+<p><strong>Remote Debugging:</strong> You want to attach to containers from another machine using familiar SSH tools.</p>
+</li>
+<li>
+<p><strong>Custom VM-like Containers:</strong> You're using containers in place of VMs and want them to behave similarly.</p>
+</li>
+</ul>
 <h2 id="step-by-step-installing-ssh-in-a-container">Step-by-step: Installing SSH in a Container</h2>
 <p>While using an Ubuntu terminal, we'll create an Ubuntu-based container, install OpenSSH Server, and configure it to accept connections. </p>
 <blockquote>
@@ -652,10 +660,14 @@ CMD [&quot;/usr/sbin/sshd&quot;, &quot;-D&quot;]
 <pre><code class="language-bash">docker build -t &lt;your-ssh-container&gt; .
 </code></pre>
 <ul>
-<li><code>-t</code> tags your image with a human-readable name.</li>
-<li><code>.</code> tells Docker to look in the current directory for the Dockerfile.
-This step may take a couple of minutes for your machine to complete.</li>
+<li>
+<p><code>-t</code> tags your image with a human-readable name.</p>
+</li>
+<li>
+<p><code>.</code> tells Docker to look in the current directory for the Dockerfile.</p>
+</li>
 </ul>
+<p>This step may take a couple of minutes for your machine to complete.</p>
 <h3 id="7-run-a-container-from-the-image">7. Run a Container from the Image</h3>
 <pre><code class="language-bash">docker run -d -p 2222:22 --name ssh-container &lt;your-ssh-container&gt;
 </code></pre>
