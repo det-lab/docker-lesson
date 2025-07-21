@@ -1,8 +1,8 @@
 site_name: An Introduction to Docker
 nav:
   - Introduction: index.md
-  - Containers: 01_containers.md
-  - Installation: 02_installation.md
+  - Installation: 01_installation.md
+  - Containers: 02_containers.md
   - Docker SSH: 03_docker-ssh.md
   - Basic Commands: 04_basic-commands.md
 
