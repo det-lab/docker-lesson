@@ -1,5 +1,5 @@
 # 5: Basic Docker Commands
-Once Docker is installed, you'll primarily use the `docker` CLI to interact with images and containers. Here's some of the essential commands that cover the full lifecycle: build, run, inspect, and manage.
+Once Docker is installed, you'll primarily use the `docker` CLI (Command-Line Interface) to interact with images and containers. Here's some of the essential commands that cover the full lifecycle: build, run, inspect, and manage. You will need to run these commands in a shell.
 ## Building a Docker Image
 To create a container, you first need an image. If you have a `Dockerfile`, you can build an image from it:
 ```bash
@@ -48,27 +48,6 @@ docker inspect <your-container>
 ```bash
 docker stats
 ```
-## Managing Containers:
-* Stop a running container:
-```bash
-docker stop <your-container>
-```
-* Start a stopped container:
-```bash
-docker start <your-container>
-```
-* Restart a container:
-```bash
-docker restart <your-container>
-```
-* Remove a stopped container:
-```bash
-docker rm <your-container>
-```
-* Remove an image:
-```bash
-docker rmi <your-image-name>
-```
 ## Cleanup Tips
 * Remove all stopped containers:
 ```bash
@@ -85,4 +64,10 @@ docker system prune
 
 ---
 
-Now that you know how to build, run, and manage containers, we can continue to [section 6](06_examples.md) to show how Docker can simplify development and deployment workflows.
+If you want to continue to learn more about Docker after this lesson here are some additional resources:
+
+* [The Carpentries Community Lessons.](https://carpentries.org/lesson-development/community-lessons/) Use the search box at the bottom to search "containers" to find more relevant lessons.
+
+* [The HSF Training Center.](https://hsf-training.org/training-center/) Articles of interest to you may be the ones for Docker, Singularity, and Reproducible Analysis with REANA.
+
+* [How Containers Work!](https://store.wizardzines.com/products/how-containers-work) by Julia Evans. If you really want to understand how containers work, this is the best resource available.

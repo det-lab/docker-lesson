@@ -1,4 +1,4 @@
-# 2: Containers and Images
+# Containers and Images
 When working with Docker, two core concepts that you'll encounter are **container images** and **containers**. Understanding them both and the distinctions between them is key to the effective use of Docker.
 
 ## Container Images
@@ -9,11 +9,7 @@ Container images are **static** and **read-only** - you can think of them as sna
 Docker images are versioned and portable, allowing you to move seamlessly between development, testing, and production environments. 
 
 ## Containers
-Docker describes containers as "a standard unit of software" which packages all code and its dependencies. It can also be thought of as a **running instance** of a container image. When Docker starts a container, it creates a writable layer "on top" of the read-only image, before allowing the application to run in an isolated environment with its own file system, network interfaces, and process space. You can run multiple containers from the same image at the same time while allowing each container to act as an independent unit. 
-
-For example, it might be useful to use the same database image to run one container for development, another for automated tests, and a third in production. Despite all coming from the same image, each container is able to store its own data and settings.
-
-This separation between images (the blueprints) and containers (the running instances) allows Docker to quickly set up new environments, efficiently reuse resources, and ensure consistency across machines and stages of development.
+Docker describes containers as "a standard unit of software" which packages all code and its dependencies. It can also be thought of as a **running instance** of a container image. When Docker starts a container, it creates a writable layer "on top" of the read-only image, before allowing the application to run in an isolated environment with its own file system, network interfaces, and process space. Pay attention to language - the images are the blueprints and the containers are more like the running instances.
 
 ## Containers vs. Virtual Machines
 While containers and virtual machines (VMs) might seem similar at a glance (both allow you to run isolated environments), the way that they achieve their isolation and their performance characteristics are significantly different. 
@@ -36,4 +32,4 @@ As mentioned before, a container **shares** the host's operating system kernal, 
 | Isolation:      | Hardware-level                           | Process-level          |
 
 ---
-Let's continue on to [section 3](03_installation.md) to install Docker and start working with containers.
+Let's continue on to [the next section](03_docker-ssh.md) where we will start a container that runs an SSH service so that you can practice using SSH.

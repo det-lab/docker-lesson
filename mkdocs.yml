@@ -1,12 +1,11 @@
 site_name: An Introduction to Docker
 nav:
-  - Home: index.md
-  - Introduction: 01_introduction.md
-  - Containers: 02_containers.md
-  - Installation: 03_installation.md
-  - Docker SSH: 04_docker-ssh.md
-  - Basic Commands: 05_basic-commands.md
-  - Example Usage: 06_examples.md
+  - Introduction: index.md
+  - Containers: 01_containers.md
+  - Installation: 02_installation.md
+  - Docker SSH: 03_docker-ssh.md
+  - Basic Commands: 04_basic-commands.md
+  - Example Usage: 05_examples.md
 
 theme: 
   name: material
