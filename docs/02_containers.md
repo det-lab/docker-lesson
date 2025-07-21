@@ -19,8 +19,11 @@ This separation between images (the blueprints) and containers (the running inst
 While containers and virtual machines (VMs) might seem similar at a glance (both allow you to run isolated environments), the way that they achieve their isolation and their performance characteristics are significantly different. 
 
 A virtual machine emulates an **entire computer**, including:
+
 * Its own guest operating system.
+
 * Virtual hardware, such as CPU, memory, disk, and network interfaces.
+
 Each VM runs on top of a hypervisor, such as VirtualBox or VMware, which sits between the physical hardware and the virtual machine.
 
 As mentioned before, a container **shares** the host's operating system kernal, simply isolating the file system, processes, and network. To summarize:

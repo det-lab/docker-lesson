@@ -3,9 +3,13 @@
 In most cases, SSH is not necessary in containers. Docker is designed to run a single applciation per container, and you typically interact with it using `docker exec`, `docker attach` or Docker Compose. Adding SSH can increase the image size, introduce complexity, and create potential security concerns.
 
 However, there are situations in which installing SSH makes sense:
+
 * **Legacy Systems:** You're containerizing an existing system that expects SSH access.
+
 * **Remote Debugging:** You want to attach to containers from another machine using familiar SSH tools.
+
 * **Custom VM-like Containers:** You're using containers in place of VMs and want them to behave similarly.
+
 ## Step-by-step: Installing SSH in a Container
 While using an Ubuntu terminal, we'll create an Ubuntu-based container, install OpenSSH Server, and configure it to accept connections. 
 > **Note:** Angled brackets in this lesson denote user-specific content - be sure to delete them and replace them to your preference.
@@ -52,7 +56,9 @@ In the same directory as your `Dockerfile`, run:
 docker build -t <your-ssh-container> .
 ```
 * `-t` tags your image with a human-readable name.
+
 * `.` tells Docker to look in the current directory for the Dockerfile.
+
 This step may take a couple of minutes for your machine to complete.
 ### 7. Run a Container from the Image
 ```bash

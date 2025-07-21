@@ -14,8 +14,11 @@ To create and start a container from an image, run:
 docker run -it --name <your-container> <your-image-name>
 ```
 * `-it`: Attaches an interactive terminal.
+
 * `--name <your-container>`: Assigns a name to the container.
+
 * `<your-image-name>`: Refers to the image built earlier.
+
 To run container in the background:
 ```bash
 docker run -d --name <your-container> <my-image-name>

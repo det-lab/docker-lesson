@@ -53,8 +53,11 @@ docker run -d -p 80:3000 username/my-node-app
 ```
 Benefits:
 * Your app runs the same everywhere: dev, staging, and production.
+
 * No need to manage OS-level software
+
 * One command deployment on any machine with Docker installed.
+
 
 ## Example 3: Testing in Clean, Disposable Environments
 Want to test your app against three different versions of a database?
@@ -67,8 +70,11 @@ Connect your app to each one in turn to verify compatibility without needing to 
 
 Benefits:
 * Fully isolated test environments.
+
 * No polluting your system with conflicting installs.
+
 * Test against multiple OS or service versions quickly.
+
 ## Example 4: CI/CD Integration
 In CI pipelines (GitHub Actions, GitLab CI, etc.), you can define Docker-based test environments:
 ```yaml
@@ -87,6 +93,9 @@ jobs:
         run: docker build . && docker run my-app test
 ```
 Benefits:
+
 * Reliable and reproducible test environments.
+
 * Test builds that exactly mirror production.
+
 * Reduced setp complexity in CI scripts.
