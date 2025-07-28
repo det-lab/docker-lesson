@@ -1,4 +1,4 @@
-# Initial Requirments
+# Initial Requirements
 This lesson will assume a working understanding of how to use the Unix Shell. If you are new to the Unix shell, we recommend first doing the [Software Carpentry Unix Shell tutorial](https://swcarpentry.github.io/shell-novice/). Another tutorial that might be useful is my [Unix Introduction lesson](https://det-lab.github.io/unix-tips/).
 # Installing Docker
 Docker Desktop is the primary application for managing containers on your local machine. It provides a user-friendly GUI, integrates with your system's Command-Line Interface (CLI) tools, and includes everything necessary to build and share containerized apps. 
