@@ -27,6 +27,8 @@ By the end of this lesson, you should have a working understanding of how to use
 
 * [How Containers Work!](https://store.wizardzines.com/products/how-containers-work) by Julia Evans. If you really want to understand how containers work, this is the best resource available.
 
+>If you are new to programming, it's recommended that you first take a few minutes to go over [this short lesson](https://det-lab.github.io/reading-documentation/) talking about how to read technical documentation.
+
 ---
 
 Let's continue to [the next section](01_installation.md) to begin learning about container images and containers.
