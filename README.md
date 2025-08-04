@@ -1,5 +1,5 @@
 # Introduction to Docker with SSH
-This lesson is designed to introduce new users to Docker using a step-by-step tutorial hosted with MkDocs. The goal of this tutorial is to get a local container running that the user can SSH into, so that they can run the SSH tutorial even without cluster credentials. It covers the fundamentals of containerization, Docker image vs. container differences, and walks through a hands-on example of building and running a container with SSH access.
+This lesson is designed to introduce new users to Docker using a step-by-step tutorial hosted with MkDocs. The goal of this tutorial is to get a local container running that the user can SSH into, so that they can run this [SSH tutorial](https://hsf-training.github.io/hsf-training-ssh-webpage/) even without cluster credentials. It covers the fundamentals of containerization, Docker image vs. container differences, and walks through a hands-on example of building and running a container with SSH access.
 
 ## Lesson Overview
 The tutorial is broken into the following sections:
@@ -10,7 +10,7 @@ Introduces the lesson and sets expectations and goals.
 
 * **[Installation](01_installation.md)**
 
-Shows how to install Docket Desktop on your system and verify that the installation is working.
+Shows how to install Docker Desktop on your system and verify that the installation is working.
 
 * **[Containers and Images](02_containers.md)**
 
@@ -35,6 +35,8 @@ To get started:
 * A basic understanding of the Unix shell.
 
 * Familiarity with running commands in the terminal.
+
+* An understanding of how to read technical documentation. [Here's a link to a short lesson](https://det-lab.github.io/reading-documentation/) which covers the basics.
 
 * (Optional) Review the [Unix Shell tutorial by Software Carpentry](https://swcarpentry.github.io/shell-novice/)
 

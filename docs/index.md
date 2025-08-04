@@ -3,15 +3,18 @@ In this lesson, we'll explore:
 
 * What containers are and how they differ from virtual machines.
 
-* How to install Docker and run your first container.
+* How to install Docker and run a pre-built container.
 
-* How to install SSH inside a container, and why you might choose to do so.
+* How to describe, build, and run a container that includes SSH.
 
-* Use a Docker container to explore SSH
+The goal of this tutorial is to get a local container running that the user can SSH into, so that they can run this [SSH tutorial](https://hsf-training.github.io/hsf-training-ssh-webpage/) even without cluster credentials.
 
-* How to use basic Docker commands to build, inspect, and manage your containers.
+## Prerequisites
+If you are new to programming, it's recommended that you first take a few minutes to go over [this short lesson](https://det-lab.github.io/reading-documentation/) talking about how to read technical documentation.
 
-* Practical examples to illustrate how Docker can simplify both development and deployment workflows.
+You'll also need a basic understanding of the Unix shell.  If you're unfamiliar with the Unix shell, review the [Unix Shell tutorial by Software Carpentry](https://swcarpentry.github.io/shell-novice/). 
+
+## Why Containers?
 
 Docker is a tool which allows users to build, share, package, verify, and run applications in isolated environments called **containers** while avoiding the tedium of environment configuration and management.
 
@@ -26,8 +29,6 @@ By the end of this lesson, you should have a working understanding of how to use
 * [The HSF Training Center.](https://hsf-training.org/training-center/) Articles of interest to you may be the ones for Docker, Singularity, and Reproducible Analysis with REANA.
 
 * [How Containers Work!](https://store.wizardzines.com/products/how-containers-work) by Julia Evans. If you really want to understand how containers work, this is the best resource available.
-
->If you are new to programming, it's recommended that you first take a few minutes to go over [this short lesson](https://det-lab.github.io/reading-documentation/) talking about how to read technical documentation.
 
 ---
 
