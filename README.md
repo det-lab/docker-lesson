@@ -20,10 +20,6 @@ Explains the core differences between images and containers and how they compare
 
 Set up an SSH-enabled container so you can practice SSH commands without needing a cluster account.
 
-* **[Basic Commands](04_basic-commands.md)**
-
-Gives some examples of commands for building, running, inspecting, and managing containers.
-
 ## Getting Started
 
 To get started:

@@ -97,3 +97,5 @@ If you want to continue to learn more about Docker after this lesson here are so
 * [The HSF Training Center.](https://hsf-training.org/training-center/) Articles of interest to you may be the ones for Docker, Singularity, and Reproducible Analysis with REANA.
 
 * [How Containers Work!](https://store.wizardzines.com/products/how-containers-work) by Julia Evans. If you really want to understand how containers work, this is the best resource available.
+
+* [Developing inside a container](https://code.visualstudio.com/docs/devcontainers/containers) for Visual Studio Code. This is a quick tutorial on using Docker with Visual Studio Code.
