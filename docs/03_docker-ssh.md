@@ -23,10 +23,12 @@ cd example-ssh-container
 <details>
   <summary>If you encounter an error.</summary>
   <p>
+  With the above commands, you may encounter the following error:
 
-  `
+  ```
   mkdir: cannot create directory ‘example-ssh-container’: File exists
-  `
+  ```
+
   This error means that you've likely ran this lesson before. If so, you may only have to run:
 
   ```
