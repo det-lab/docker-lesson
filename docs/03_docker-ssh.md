@@ -20,10 +20,19 @@ Then you can make a new folder and move into it using:
 mkdir example-ssh-container
 cd example-ssh-container
 ```
->NOTE: If you try to create a directory with an existing name, you'll run into the error:
-```bash
-mkdir: cannot create directory ‘example-ssh-container’: File exists
-```
+<details>
+  <summary>Encountering errors</summary>
+  <p>
+  mkdir: cannot create directory ‘example-ssh-container’: File exists
+
+  This error means that you've likely ran this lesson before. If so, you may only have to run:
+  ```
+  cd example-ssh-container
+  ```
+  
+  </p>
+</details>
+
 ### 2. Create a file named `Dockerfile` (no file extension)
 ```bash
 touch Dockerfile
