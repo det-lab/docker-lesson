@@ -7,7 +7,6 @@ In most cases, SSH is not necessary in containers. Docker is designed to run a s
 ## Step-by-step: Installing SSH in a Container
 While using an Ubuntu terminal, we'll create an Ubuntu-based container, install OpenSSH Server, and configure it to accept connections. 
 
-> **Note:** Angled brackets in this lesson denote user-specific content - be sure to delete them and replace them to your preference. If you have not done this before, please [read this before continuing](TODO)
 > For more information on using SSH, visit our HSF training page, [here](https://hsf-training.github.io/hsf-training-ssh-webpage/).
 ### 0. Open your terminal
 If you're unsure how to open your terminal, refer to [the shell lesson on Software Carpentry.](https://swcarpentry.github.io/shell-novice/) On Windows, the appropriate application is often called Ubuntu. You can install a Terminal application from the Microsoft App Store for free. On a Mac, the appropriate application is called Terminal. On Linux, there are several different Terminal applications, and you may need to search 'terminal application + <your specific distribution>' to find the name.
@@ -18,8 +17,12 @@ cd /mnt/c/Users/<your username>/Documents/
 ```
 Then you can make a new folder and move into it using:
 ```bash
-mkdir <your-ssh-container>
-cd <your-ssh-container>
+mkdir example-ssh-container
+cd example-ssh-container
+```
+>NOTE: If you try to create a directory with an existing name, you'll run into the error:
+```bash
+mkdir: cannot create directory ‘example-ssh-container’: File exists
 ```
 ### 2. Create a file named `Dockerfile` (no file extension)
 ```bash
@@ -49,7 +52,7 @@ CMD ["/usr/sbin/sshd", "-D"]
 ### 6. Build the Image
 In the same directory as your `Dockerfile`, run:
 ```bash
-docker build -t <your-ssh-container> .
+docker build -t example-ssh-container .
 ```
 * `-t` tags your image with a human-readable name.
 
@@ -58,7 +61,7 @@ docker build -t <your-ssh-container> .
 This step may take a couple of minutes for your machine to complete.
 ### 7. Run a Container from the Image
 ```bash
-docker run -d -p 2222:22 --name ssh-container <your-ssh-container>
+docker run -d -p 2222:22 --name ssh-container example-ssh-container
 ```
 * This maps port `22` inside the container to port `2222` on your machine.
 
