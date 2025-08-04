@@ -85,8 +85,15 @@ ssh root@localhost -p 2222
 ```
 This will prompt you to enter the password which was set in step 4 (`RUN mkdir /var/run/sshd && echo 'root:<your-new-password>' | chpasswd`). 
 
+# Next Step
 Now, you can refer to the [SSH tutorial](https://hsf-training.github.io/hsf-training-ssh-webpage/) and explore, even if you don't have an account on a cluster.
 
----
+# Continued Reading
 
-If you want to learn more about basic Docker commands, see [the next section](04_basic-commands.md). 
+If you want to continue to learn more about Docker after this lesson here are some additional resources:
+
+* [The Carpentries Community Lessons.](https://carpentries.org/lesson-development/community-lessons/) Use the search box at the bottom to search "containers" to find more relevant lessons.
+
+* [The HSF Training Center.](https://hsf-training.org/training-center/) Articles of interest to you may be the ones for Docker, Singularity, and Reproducible Analysis with REANA.
+
+* [How Containers Work!](https://store.wizardzines.com/products/how-containers-work) by Julia Evans. If you really want to understand how containers work, this is the best resource available.
