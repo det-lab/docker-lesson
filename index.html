@@ -201,6 +201,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -212,6 +225,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Containers?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -290,7 +340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="04_basic-commands/" class="md-nav__link">
+      <a href="04_basic-commands.md" class="md-nav__link">
         
   
   
@@ -325,6 +375,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Containers?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -346,21 +422,17 @@
 <p>What containers are and how they differ from virtual machines.</p>
 </li>
 <li>
-<p>How to install Docker and run your first container.</p>
+<p>How to install Docker and run a pre-built container.</p>
 </li>
 <li>
-<p>How to install SSH inside a container, and why you might choose to do so.</p>
-</li>
-<li>
-<p>Use a Docker container to explore SSH</p>
-</li>
-<li>
-<p>How to use basic Docker commands to build, inspect, and manage your containers.</p>
-</li>
-<li>
-<p>Practical examples to illustrate how Docker can simplify both development and deployment workflows.</p>
+<p>How to describe, build, and run a container that includes SSH.</p>
 </li>
 </ul>
+<p>The goal of this tutorial is to get a local container running that the user can SSH into, so that they can run this <a href="https://hsf-training.github.io/hsf-training-ssh-webpage/">SSH tutorial</a> even without cluster credentials.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>If you are new to programming, it's recommended that you first take a few minutes to go over <a href="https://det-lab.github.io/reading-documentation/">this short lesson</a> talking about how to read technical documentation.</p>
+<p>You'll also need a basic understanding of the Unix shell.  If you're unfamiliar with the Unix shell, review the <a href="https://swcarpentry.github.io/shell-novice/">Unix Shell tutorial by Software Carpentry</a>. </p>
+<h2 id="why-containers">Why Containers?</h2>
 <p>Docker is a tool which allows users to build, share, package, verify, and run applications in isolated environments called <strong>containers</strong> while avoiding the tedium of environment configuration and management.</p>
 <p>It's not uncommon when programming collaboratively that something that works well on one user's environment will run into issues when another user tries to run the same steps. Docker solves this problem by having dependencies and environment settings bundled together in a portable format. Whether you're developing from your personal laptop, running code on a high performance computing cluster, or deploying to production servers, Docker helps to ensure that the environment stays consistent.</p>
 <p><strong>Containers</strong> are lightweight and fast, built to share the host's operating system's kernel rather than running full virtual machines. This makes them ideal for testing software in clean environments.</p>
@@ -376,9 +448,6 @@
 <p><a href="https://store.wizardzines.com/products/how-containers-work">How Containers Work!</a> by Julia Evans. If you really want to understand how containers work, this is the best resource available.</p>
 </li>
 </ul>
-<blockquote>
-<p>If you are new to programming, it's recommended that you first take a few minutes to go over <a href="https://det-lab.github.io/reading-documentation/">this short lesson</a> talking about how to read technical documentation.</p>
-</blockquote>
 <hr />
 <p>Let's continue to <a href="01_installation/">the next section</a> to begin learning about container images and containers.</p>
 
