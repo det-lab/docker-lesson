@@ -1,5 +1,5 @@
 # Introduction to Docker with SSH
-This lesson is designed to introduce new users to Docker using a step-by-step tutorial hosted with MkDocs. It covers the fundamentals of containerization, Docker image vs. container differences, and walks through a hands-on example of building and running a container with SSH access.
+This lesson is designed to introduce new users to Docker using a step-by-step tutorial hosted with MkDocs. The goal of this tutorial is to get a local container running that the user can SSH into, so that they can run the SSH tutorial even without cluster credentials. It covers the fundamentals of containerization, Docker image vs. container differences, and walks through a hands-on example of building and running a container with SSH access.
 
 ## Lesson Overview
 The tutorial is broken into the following sections:
