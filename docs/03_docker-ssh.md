@@ -21,10 +21,11 @@ mkdir example-ssh-container
 cd example-ssh-container
 ```
 <details>
-  <summary>Encountering errors</summary>
+  <summary>If you encounter an error.</summary>
   <p>
+  ```
   mkdir: cannot create directory ‘example-ssh-container’: File exists
-
+  ```
   This error means that you've likely ran this lesson before. If so, you may only have to run:
   ```
   cd example-ssh-container
